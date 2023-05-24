@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptação de imagens</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em diferentes dispositivos ou simplesmente aumente ou diminuia o navegador</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/P.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/M.png" type="image/png">
+        <img src="imagens/G.png" alt="Imagens dinâmicas">
+
+        <!--Os itens mais acima tem que ser menores para o max width e os seguintes tem que ser maiores-->
+
+    </picture> <!--A ordem tem que ser obedecida, o maior tem que ser sempre o último-->
+    <h1>Reproduzindo áudios em HTML5</h1>
+    <p>Aprendendo a reproduzir áudios em HTML5</p>
+        <audio preload="metadata" autoplay controls loop>
+            <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+            <source src="midias/guanacast-33.ogg" type="audio/ogg">
+            <source src="midias/guanacast-33.wav" type="audio/wav">
+        </audio>  <!--ALguns navegadores não são compatíveis com os formatos de áudio mp3, nesse caso, é necessário baixar o áudio nos formatos OGG ou WAV(OBS: esse formato é muito pesado) para tentar a compatibilidade. Em último caso, disponibilizar o link para o usuário fazer o download-->
+    <p>Infelizmente seu navegador não é compatível. <a href="https://raw.githubusercontent.com/gustavoguanabara/html-css/master/exercicios/modulo-01/ex011/midia/happy-mistake.mp3">CLique aqui </a>para fazer o download do áudio </p>
+</body>
+</html>
